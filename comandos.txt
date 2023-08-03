@@ -1,0 +1,4 @@
+criar container node:latest
+docker run -it -u 1000 -v "$PWD":/app -p 3000:3000 --name node-curso  250e9c100ea2 /bin/bash
+
+docker run -d -p 3306:3306 --name mysql_api_container -e MYSQL_ALLOW_EMPTY_PASSWORD=True mysql
